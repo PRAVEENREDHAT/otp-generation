@@ -1,0 +1,378 @@
+{
+	"info": {
+		"_postman_id": "e549acda-c9d6-4188-92ac-13d624a50b2b",
+		"name": "OTP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/v1/OTP/verify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"546844027858374094EE9FECF6AE2CF78F8614AFEA847EF4AAB9F375F664D18C10D160297950238FB3EDFA93F8211A45AABE3134ED8B48F28B1C3655D67AAA3F.1667279049768\",\n    \"otp\":\"327392\",\n    \"mobNum\":\"7895018921\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/OTP/verify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"OTP",
+						"verify"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "good response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"546844027858374094EE9FECF6AE2CF78F8614AFEA847EF4AAB9F375F664D18C10D160297950238FB3EDFA93F8211A45AABE3134ED8B48F28B1C3655D67AAA3F.1667279049768\",\n    \"otp\":\"327391\",\n    \"mobNum\":\"7895018921\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/OTP/verify",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"OTP",
+								"verify"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Accept",
+							"value": "*/*"
+						},
+						{
+							"key": "Accept-Encoding",
+							"value": "gzip, deflate, br"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, CONNECT, PATCH"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "id",
+							"value": "546844027858374094EE9FECF6AE2CF78F8614AFEA847EF4AAB9F375F664D18C10D160297950238FB3EDFA93F8211A45AABE3134ED8B48F28B1C3655D67AAA3F.1667279049768"
+						},
+						{
+							"key": "mnumber",
+							"value": "7895018921"
+						},
+						{
+							"key": "otp",
+							"value": "327391"
+						},
+						{
+							"key": "otplimit",
+							"value": "1667279049768"
+						},
+						{
+							"key": "Postman-Token",
+							"value": "bb78f8ad-8e9e-4df7-9092-b74ad1de4ba8"
+						},
+						{
+							"key": "timenow",
+							"value": "1667278449769"
+						},
+						{
+							"key": "User-Agent",
+							"value": "PostmanRuntime/7.29.2"
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "\"{\\\"status\\\":\\\"otpVerfied\\\"}\""
+				},
+				{
+					"name": "bad response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"546844027858374094EE9FECF6AE2CF78F8614AFEA847EF4AAB9F375F664D18C10D160297950238FB3EDFA93F8211A45AABE3134ED8B48F28B1C3655D67AAA3F.1667279049768\",\n    \"otp\":\"327392\",\n    \"mobNum\":\"7895018921\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/OTP/verify",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"OTP",
+								"verify"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Accept",
+							"value": "*/*"
+						},
+						{
+							"key": "Accept-Encoding",
+							"value": "gzip, deflate, br"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, CONNECT, PATCH"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "id",
+							"value": "546844027858374094EE9FECF6AE2CF78F8614AFEA847EF4AAB9F375F664D18C10D160297950238FB3EDFA93F8211A45AABE3134ED8B48F28B1C3655D67AAA3F.1667279049768"
+						},
+						{
+							"key": "mnumber",
+							"value": "7895018921"
+						},
+						{
+							"key": "otp",
+							"value": "327392"
+						},
+						{
+							"key": "otplimit",
+							"value": "1667279049768"
+						},
+						{
+							"key": "Postman-Token",
+							"value": "33bee5fe-6d04-4e8a-9db9-9840656d8b02"
+						},
+						{
+							"key": "timenow",
+							"value": "1667278449769"
+						},
+						{
+							"key": "User-Agent",
+							"value": "PostmanRuntime/7.29.2"
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "\"{\\\"status\\\":\\\"otpnotVerfied\\\"}\""
+				}
+			]
+		},
+		{
+			"name": "generateOTP",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "974321563589",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mobNum\": \"7895018921\",\n    \"otpTime\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/OTP/generate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"OTP",
+						"generate"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "generateOTP",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"mobNum\": \"7895018921\",\n    \"otpTime\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/OTP/generate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"OTP",
+								"generate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Accept",
+							"value": "*/*"
+						},
+						{
+							"key": "Accept-Encoding",
+							"value": "gzip, deflate, br"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, CONNECT, PATCH"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "3600"
+						},
+						{
+							"key": "Authorization",
+							"value": "974321563589"
+						},
+						{
+							"key": "mnumber",
+							"value": "7895018921"
+						},
+						{
+							"key": "otp",
+							"value": "632942"
+						},
+						{
+							"key": "otpdigit",
+							"value": "6"
+						},
+						{
+							"key": "otplimit",
+							"value": "1667243561156"
+						},
+						{
+							"key": "otptime",
+							"value": "10"
+						},
+						{
+							"key": "Postman-Token",
+							"value": "5088344d-26d6-499b-9814-94c36ec467be"
+						},
+						{
+							"key": "User-Agent",
+							"value": "PostmanRuntime/7.29.2"
+						},
+						{
+							"key": "transfer-encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "\"5468440278583740D0152145FCCB9A465364A9F98D5424E1DF325EDDB54D0EF0BDB6C9E3844B52878703C221EC3CB3869DC21B8AEE18B52616F4DFC3BA38E901.1667243561156\""
+				}
+			]
+		}
+	]
+}
